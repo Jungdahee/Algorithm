@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Stack;
 
-public class Solution_D4_5432_쇠막대기자르기_정다희 {
+public class SWEA_5432 {
 
 	static Stack<Character> st;
 	static int result;
