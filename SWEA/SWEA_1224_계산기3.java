@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class SWEA_1224 {
+public class SWEA_1224_계산기3 {
 
 	static Stack<Character> st1;
 	static Stack<Integer> st2;
