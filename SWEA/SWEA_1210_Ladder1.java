@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SWEA_1210 { // Ladder1
+public class SWEA_1210_Ladder1 { // Ladder1
 	static int map[][] = new int[100][100];
 	static int visit[][];
 	static boolean isFind = false;
