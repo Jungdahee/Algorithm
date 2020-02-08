@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class SWEA_6900 {
+public class SWEA_6900_주혁이의복권당첨 {
 	
 	static int n, m;
 	static String lotto[], ticket[];
