@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Stack;
 
-public class SWEA_5432 {
+public class SWEA_5432_쇠막대기자르기 {
 
 	static Stack<Character> st;
 	static int result;
