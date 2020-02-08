@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SWEA_2063 { //중간값 찾기
+public class SWEA_2063_중간값찾기 { 
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
