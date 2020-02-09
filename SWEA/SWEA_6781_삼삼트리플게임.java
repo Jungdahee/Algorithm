@@ -56,6 +56,7 @@ public class SWEA_6781_삼삼트리플게임 {
 					return;
 		}	
 		
+		//첫번째 세자리가 안되는 경우
 		if(!(tmpNum[0] + 1 == tmpNum[1] && tmpNum[1] + 1 == tmpNum[2])
 				&& !(tmpNum[0] == tmpNum[1] && tmpNum[1] == tmpNum[2])) {
 					return;
@@ -67,7 +68,7 @@ public class SWEA_6781_삼삼트리플게임 {
 					return;
 		}
 		
-		//두번째 세자리가 안되는 경우
+		//세번째 세자리가 안되는 경우
 		if(!(tmpNum[6] + 1 == tmpNum[7] && tmpNum[7] + 1 == tmpNum[8])
 				&& !(tmpNum[6] == tmpNum[7] && tmpNum[7] == tmpNum[8])) {
 					return;
