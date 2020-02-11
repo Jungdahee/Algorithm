@@ -73,7 +73,7 @@ public class SWEA_1224_계산기3 {
 	private static void calc() {
 		for(int i = 0; i < result.length(); i++) {
 			char c = result.charAt(i);
-			if(c >= '0' && c <= '9') st2.push(c - '0'); //숫자 스택2에 넣기
+			if(c >= '0' && c <= '9') st2.push(c - '0');
 			else {
 				int n2 = st2.pop();
 				int n1 = st2.pop();
