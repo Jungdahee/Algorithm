@@ -1,6 +1,6 @@
 import java.util.*;
 
-class PRO_42583_다리를지나는트럭 {
+public class PRO_42583_다리를지나는트럭 {
     public int solution(int bridge_length, int weight, int[] truck_weights) {
         Queue<Integer> bridge = new LinkedList<Integer>();
         int time = 0;
