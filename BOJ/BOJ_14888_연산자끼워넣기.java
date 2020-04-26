@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 실행 시간 80ms
 public class BOJ_14888_연산자끼워넣기 {
 
 	public static int N, min, max, num[], operator[];
