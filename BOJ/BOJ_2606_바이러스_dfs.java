@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 // 실행 시간 76ms
-public class BOJ_2606_바이러스 {
+public class BOJ_2606_바이러스_dfs {
 
 	public static int node, edge, result;
 	public static boolean visited[];
@@ -33,11 +33,6 @@ public class BOJ_2606_바이러스 {
 		// 1번 컴퓨터부터 시작하기 때문에 여기 코드에선 0부터 시작
 		dfs(0);
 		
-		// 방문된 인덱스의 컴퓨터들은 감염이 된 것므로 카운팅
-		for(int i = 0; i < network.length; i++) {
-			if(visited[i]) result++;
-		}
-		
 		// 1번 컴퓨터가 감염시킨 컴퓨터 수를 세는 것이므로 1번 컴퓨터도 카운팅된 result에서 - 1
 		System.out.println(result - 1);
 	}
@@ -45,6 +40,7 @@ public class BOJ_2606_바이러스 {
 	private static void dfs(int node) {
 		// 현재 노드 방문 처리
 		visited[node] = true;
+		result++;
 		
 		// 현재 노드와 연결되어 있고 방문하지 않은 노드들 차례대로 방문
 		for(int vertex : network[node]) {
