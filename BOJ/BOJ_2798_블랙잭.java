@@ -16,8 +16,8 @@ public class BOJ_2798_블랙잭 {
 		M = Integer.parseInt(input1[1]);
 		max = Integer.MIN_VALUE;
 		cards = new Integer[N];
-		String input2[] = br.readLine().split(" ");
 		
+		String input2[] = br.readLine().split(" ");
 		for(int i = 0; i < input2.length; i++) cards[i] = Integer.parseInt(input2[i]);
 
 		for(int i = 0; i < cards.length - 2; i++) {
