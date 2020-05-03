@@ -17,7 +17,6 @@ public class BOJ_1436_영화감독숌 {
 			if(N == 0) break;
 			
 			tmp = String.valueOf(result);
-			
 			if(tmp.contains("666")) N--;
 			result++;
 		}
