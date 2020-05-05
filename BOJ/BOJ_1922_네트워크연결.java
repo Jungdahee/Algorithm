@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-// 실행 시간 600ms
+// 실행 시간 602ms
 public class BOJ_1922_네트워크연결 {
 
 	/*
