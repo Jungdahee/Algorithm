@@ -3,23 +3,21 @@ package BOJ;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class BOJ_2529_부등호 {
 
 	public static int R;
-	public static String min, max, origin[], numbers[];
+	public static String min, max, origin[], numbers[], sign[];
 	public static boolean isSelected[];
-	public static char sign[];
 	public static StringBuilder sb;
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		R = Integer.parseInt(br.readLine()) + 1;
-		sign = br.readLine().toCharArray();
-		origin = new String[10];
-		isSelected = new boolean[10];
+		sign = br.readLine().split(" ");
+		origin = new String[11];
+		isSelected = new boolean[11];
 		numbers = new String[R];
-		min = "987654321";
+		min = "9876543210";
 		max = "0";
 
 		for(int i = 0; i <= 9; i++) origin[i] = String.valueOf(i);
@@ -37,8 +35,8 @@ public class BOJ_2529_부등호 {
 			
 			if(judge()) {
 				String tmp = sb.toString();
-				if(Integer.parseInt(min) > Integer.parseInt(tmp)) min = tmp;
-				if(Integer.parseInt(max) < Integer.parseInt(tmp)) max = tmp;
+				if(Long.parseLong(min) > Long.parseLong(tmp)) min = tmp;
+				if(Long.parseLong(max) < Long.parseLong(tmp)) max = tmp;
 			}
 			return;
 		}
@@ -55,17 +53,15 @@ public class BOJ_2529_부등호 {
 	private static boolean judge() {
 		for(int i = 0; i < numbers.length - 1; i++) {
 			boolean isSuccess = false;
-			int num1 = Integer.parseInt(numbers[i]);
-			int num2 = Integer.parseInt(numbers[i + 1]);
+			long num1 = Long.parseLong(numbers[i]);
+			long num2 = Long.parseLong(numbers[i + 1]);
 			
-			System.out.println(Arrays.toString(numbers));
 			switch(sign[i]) {
-				case '<' : if(num1 < num2) isSuccess = true;
+				case "<" : if(num1 < num2) isSuccess = true;
 						break;
-				case '>' : if(num1 > num2) isSuccess = true;
+				case ">" : if(num1 > num2) isSuccess = true;
 						break;
 			}
-			System.out.println(isSuccess);
 			if(!isSuccess) return false;
 		}
 		return true;
