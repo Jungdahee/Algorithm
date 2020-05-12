@@ -7,6 +7,7 @@ public class BOJ_2941_크로아티아알파벳 {
 
 	static int result;
 	static LinkedList<String> list = new LinkedList<String>();
+	
 	public static void main(String[] args) throws IOException {
 		String cro[] = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
 
