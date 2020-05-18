@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 실행 시간 436ms
 public class BOJ_14889_스타트와링크 {
 
 	public static int N, result, origin[], start[], link[], map[][];
