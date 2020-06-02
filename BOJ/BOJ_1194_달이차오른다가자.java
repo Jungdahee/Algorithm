@@ -52,11 +52,12 @@ public class BOJ_1194_달이차오른다가자 {
 	private static void bfs() {
 		Queue<Pair> q = new LinkedList<Pair>();
 		q.offer(new Pair(startX, startY, 0, 0));
-		visited[0][startX][startY] = true;
+		visited[0][startX][startY] = true; // 시작점 셋팅
 		
 		while(!q.isEmpty()) {
 			Pair cur = q.poll();
 			
+			// 탐색 종료
 			if(map[cur.x][cur.y] == '1') {
 				result = cur.dist;
 				break;
