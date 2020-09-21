@@ -1,8 +1,6 @@
 package BOJ;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 
 public class BOJ_18352_특정거리의도시찾기 {
