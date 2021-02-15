@@ -54,10 +54,4 @@ public class PRO_67259_경주로건설 {
     public static boolean checkRange(int x, int y){
         return x < 0 || x >= N || y < 0 || y >= N;
     }
-
-    public static void main(String args[]){
-        int board[][] = {{0,0,0},{0,0,0},{0,0,0}};
-        // int board[][] = {{0, 0, 1, 0}, {0, 0, 0, 0}, {0, 1, 0, 1}, {1, 0, 0, 0}};
-        System.out.println(solution(board));
-    }
 }
