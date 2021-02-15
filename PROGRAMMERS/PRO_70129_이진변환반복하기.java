@@ -22,8 +22,4 @@ public class PRO_70129_이진변환반복하기 {
         answer[1] = zero;
         return answer;
     }
-
-    public static void main(String args[]){
-        System.out.println(Arrays.toString(solution("110010101001")));
-    }
 }
