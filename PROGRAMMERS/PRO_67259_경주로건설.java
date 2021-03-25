@@ -13,6 +13,7 @@ public class PRO_67259_경주로건설 {
             this.cost = cost;
         }
     }
+    
     public static int solution(int[][] board) {
         int answer = Integer.MAX_VALUE;
         N = board.length;
